@@ -5,8 +5,8 @@ import { CustomTemplateCertificate } from "../sample";
 import { PrintWatermark } from "../../core/PrintWatermark";
 
 const containerStyle = css`
-  background-color: #324353;
-  color: #ffffff;
+  background-color: #FFBE33;
+  color: #C233FF;
   padding: 15px;
   margin: auto;
   width: 80%;
@@ -19,9 +19,16 @@ export const CustomTemplate: FunctionComponent<
   return (
     <div css={containerStyle} className={className} id="custom-template">
       <PrintWatermark />
-      <h1>{document.name}</h1>
-      <div>given to</div>
+      <br>
+      <br>
+      <br></br></br></br>
+      <h1>Opencerts</h1>
+      <h3>This is to certify that</h3>
+      <br></br>
       <h2>{document.recipient.name}</h2>
+      <br> has successfully completed </br>
+      <br></br>
+      <div>the Opencerts Demo</div>
     </div>
   );
 };
